@@ -18,7 +18,7 @@ public class Main {
             System.out.print("Your choice: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline character
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
@@ -69,7 +69,7 @@ LocalDateTime endTime = LocalDateTime.parse(scanner.nextLine().trim(), formatter
         if ((newStartTime.isAfter(startTime) && newStartTime.isBefore(endTime)) ||
                 (newEndTime.isAfter(startTime) && newEndTime.isBefore(endTime)) ||
                 (newStartTime.isBefore(startTime) && newEndTime.isAfter(endTime)) ||
-                (newStartTime.equals(startTime) && newEndTime.equals(endTime))) { // New condition
+                (newStartTime.equals(startTime) && newEndTime.equals(endTime))) { 
             return true;
         }
     }
